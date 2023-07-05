@@ -72,7 +72,8 @@
           });
       })
       const cariSurah = computed(()=>{
-        return dataSurah.value.filter(dataSurah => dataSurah.name_simple.includes(cari.value));
+        return dataSurah.value.filter(data => data.name_simple.toLowerCase().includes(cari.value.toLowerCase()));
+
       })
       return {
         dataSurah,
