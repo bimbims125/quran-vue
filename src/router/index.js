@@ -1,16 +1,28 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {
+  createRouter,
+  createWebHistory
+} from 'vue-router'
 
-const routes = [
-  {
+const routes = [{
     path: '/',
     name: 'index',
-    component: ()=>import('../views/Index.vue')
+    component: () => import('../views/Index.vue')
   },
   {
     path: '/surah/:id',
     name: 'surah',
-    component: ()=>import('../views/Surah.vue')
-  }
+    component: () => import('../views/Surah.vue')
+  },
+  // Rute terakhir sebagai fallback
+  {
+    path: '/404',
+    name: '404',
+    component: () => import('../components/404Notfound.vue'),
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/404',
+  },
 ]
 
 const router = createRouter({
