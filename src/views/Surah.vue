@@ -6,7 +6,7 @@
         <span class="text-muted text-small">({{ dataSurah.arti }})</span>
         <h3>Surah {{ dataSurah.namaLatin }}</h3>
         <p v-html="dataSurah.deskripsi"></p>
-        <audio id="audio-surah" :src="audioFull.data"></audio>
+        <audio id="audio-surah" :src="audioFull.data" :ref="audioSurah"></audio>
         <div class="d-flex justify-content-center">
           <button class="btn btn-dark btn-sm mr-2" @click="playAudioSurah()"><i class="fa-solid fa-play"></i>
             &nbsp;Dengarkan Surah</button>

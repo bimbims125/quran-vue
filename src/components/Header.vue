@@ -7,10 +7,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <!-- <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Beranda</a>
+                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Beranda</a>
                 <a class="nav-link {{ Request::is('quran') ? 'active' : '' }}" href="/quran">Quran</a>
                 <a class="nav-link {{ Request::is('doa') ? 'active' : '' }}" href="/doa">Doa Harian</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </div>
             </div>
         </div>
