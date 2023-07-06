@@ -1,6 +1,4 @@
 <template>
-
-    <div class="container mt-5">
       <form action="">
         <div class="form-group">
           <div class="input-group">
@@ -43,10 +41,9 @@
           </RouterLink>
         </div>
       </div>
-      <div class="" v-else>
-        <h3 class="text-center">Tidak Ada Surah bernama {{ cari }}</h3>
+      <div class="d-flex justify-content-center" v-else>
+        <h3>Tidak Ada Surah bernama {{ cari }}</h3>
       </div>
-    </div>
 
 </template>
 

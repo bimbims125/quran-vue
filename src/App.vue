@@ -1,6 +1,8 @@
 <template>
   <Header/>
-  <router-view/>
+  <div class="container mt-5">
+    <router-view/>
+  </div>
   <Footer/>
 </template>
 <script>
